@@ -1,19 +1,16 @@
 $(function(){
 	
-	// $("p").hide();
-	$('#p1').on({  // Fonctionnement de "on" avec l'objet entre parenthèse 
+	$("#start").click(function(){
 		
-		mouseenter: function(){ // si la souriis entre dans le  parag 1 on cache le parag 4
-			$("#p4").hide();
-		},
-	 
-		mouseleave: function(){  // si la souris sort du parag 1 on montre le parag 4
-			$("#p4").show();
-   	    },
-		
-		click: function(){  // si on clique sur le  parag 1 on cache le parag 2
-			$("#p2").hide();
-		}
+		$("div").animate({left:"600px"}, 5000);
+		$("div").animate({opacity:0.2}, 5000);
+		$("div").animate({width:"+=100px"}, 5000);
+		$("div").animate({height:"+=100px"}, 5000);
 	});
 	
+	
+	$("#stop").click(function(){
+		$("div").stop(true,true); // arg 1 stop toutes les animations ; arg 2 va jusqu'à la fin de l'animation courante
+		
+	});
 });
