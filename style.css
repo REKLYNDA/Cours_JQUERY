@@ -1,11 +1,9 @@
-.red {
-	
-	
-	color: red;
+* {
+	margin : 10px;
+	border: 5px solid red;
 }
 
-
-.bold {
-	
-	font-weight : bold;
+html,body
+{	
+	border: 5px none red;
 }
