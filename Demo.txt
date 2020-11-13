@@ -1,0 +1,46 @@
+
+
+ 
+/* A SAVOIR SUR JQUERY*/
+
+
+- Fonctions sur les elt : hide, show. On donne en param le temps en ms puis une callback qui peut appeler d'autres callback
+
+- commit 4f09a0ab842bb6b4b967d157caf259d09a32c181
+
+Avec l'event "on", on peut donner en param un objet contenant les events
+ possibles lorsque l'on se retrouve sur un elt et les fonctions correspondants
+ ( mouseenter : fct(){}, mouseleave: function(){})
+ 
+- commit dc76476caeab3535896ff8c3b2696f8b7aefb326
+
+ Pour modifier en parallèle les propriétés d'un objet, donner un objet en paramètre de la fonction animate avec toutes
+les propriétés que l'on veut appliquer à notre objet ; ou les donner  les uns à la suite des autres avec la fonction animate 
+le fct stop (arg1, arg2) permet de stopper ttes les anims avec le 1er param, et permet terminer jusqu'au bout l'animation en cours 
+
+
+- commit 7cc87f4ce81ca90ac0e00707216c71cea6bb347d
+
+Animation à la chaine d'un elt en mettant un point + une new fct (autre que animate) à la suite
+ de notre 1ere fct et ainsi de suite (slideUp, slideOut, fadeIn, fadeOut)
+
+
+- commit 25ca4dcd3c47e052fb5e466a7da115d974de0814
+Fonctions qui nous permettent d'agir sur notre css grâce à JQUERY 
+(addClass("class1 class2") -1 ou plusieurs classes-, removeClass, 
+toggleClass("nom_de_la_classe"), css("prop","value") et css(objet),
+width(40), height(150)) 
+
+- commit 18e832b0fae35392da6cf6c87be6da98332a2c82
+Fonctions sur l'arborescence : parent (le parent direct), parents(tous les parents), children (les enfants),
+ first (le premier parag for example), last(le dernier), eq(index) (le parag d'index x),
+ siblings( les frères), next(le frère suivant), filter(attr) (les éléments avec cet attribut),
+ not(attr) (les éléments qui n'ont pas cet attribut), find(elt) (tous les éléments de type elt)
+ 
+
+/* BONNES PRATIQUES JQUERY */
+
+
+ - être précis dans la désignation des elt avec les sélecteurs 
+ - Inspecter pour détecter les erreurs 
+ - En cas d'erreur verifier egalement html et le css
